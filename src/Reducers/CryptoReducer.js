@@ -38,6 +38,8 @@ export default function (state = initialState, action) {
                 hasError: true,
                 errorMessage: action.err
             });
+        default:
+            return state;
     }
-    return state;
+    
 }
