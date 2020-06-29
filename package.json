@@ -21,7 +21,12 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "postinstall": "remotedev-debugger — hostname localhost — port 5678 — injectserver"
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
   },
   "private": true
 }
