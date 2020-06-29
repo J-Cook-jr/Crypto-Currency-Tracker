@@ -1,16 +1,13 @@
-import * as React from "react";
-import { View, Text } from "react-native";
+import React, { Component } from "react";
+import { View } from "react-native";
+import { Header } from './src/components';
 
-export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Jeffs Crypto Currency Tracker</Text>
-    </View>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <View>
+        <Header />
+      </View>
+    );
+  }
 }
