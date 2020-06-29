@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
+
+
 const Header = () => {
     return (
-        <View>
-            <Text>Cryptocurrency App</Text>
+        <View style={headerContainer}>
+            <Text style={header}>Cryptocurrency App</Text>
         </View>
     )
 }
