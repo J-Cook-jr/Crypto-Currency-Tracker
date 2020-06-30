@@ -1,1 +1,1 @@
-export const apiBaseURL = 'https://pro-api.coinmarketcap.com';
+export const apiBaseURL = 'https://api.coingecko.com';
