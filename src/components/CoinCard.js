@@ -8,8 +8,13 @@ const styles = StyleSheet.create({
     container: {
         display: "flex",
         marginBottom: 20,
-        borderBottomColor: "#e5e5e5",
-        borderBottomWidth: 3,
+        backgroundColor: "hsl(210, 38%, 97%)",
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 8 },
+        shadowOpacity: 0.2,
+        shadowRadius: 6,
+        borderBottomWidth: 1,
+        borderBottomColor: "hsl(0, 0%, 88%)",
         padding: 20
     },
     upperRow: {
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
     },
     statisticsContainer: {
         display: "flex",
-        borderTopColor: "#FAFAFA",
+        borderTopColor: "transparent",
         borderTopWidth: 2,
         padding: 10,
         flexDirection: "row",
@@ -67,7 +72,6 @@ const styles = StyleSheet.create({
 const {
     container,
     image,
-    moneySymbol,
     upperRow,
     coinSymbol,
     coinName,
@@ -81,21 +85,20 @@ const {
 
 const CoinCard = ({ symbol, coin_name, price_usd, percent_change_percentage_24h, percent_change_percentage_7d }) => {
 
-    
+
     return (
         <View style={container}>
 
             <View style={upperRow}>
                 <Image
-                    style={ image }
+                    style={image}
                     source={{ uri: images[symbol] }}
                 />
                 <Text style={coinSymbol}>{symbol}</Text>
                 <Text style={seperator}>|</Text>
                 <Text style={coinName}>{coin_name}</Text>
-                <Text style={coinPrice}>{price_usd}
-                    <Text style={moneySymbol}>$</Text>
-                </Text>
+                <Text style={coinPrice}>${price_usd}</Text>
+
             </View>
 
             <View style={statisticsContainer}>

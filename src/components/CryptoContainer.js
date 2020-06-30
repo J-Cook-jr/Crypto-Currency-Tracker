@@ -58,7 +58,8 @@ class CryptoContainer extends Component {
 const styles = {
     contentContainer: {
         paddingBottom: 100,
-        paddingTop: 55
+        paddingTop: 55,
+        backgroundColor: "hsl(210, 32%, 93%)"
     }
 }
 
