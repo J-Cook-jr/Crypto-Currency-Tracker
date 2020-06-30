@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { View, Text, ScrollView } from 'react-native';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 import Spinner from "react-native-loading-spinner-overlay";
 
 import FetchCoinData from './../Actions/FetchCoinData';
@@ -15,7 +15,7 @@ class CryptoContainer extends Component {
     renderCoinCards() {
         const { crypto } = this.props;
         console.log(crypto)
-        return crypto.data.map((coin, index) =>
+        return crypto.data.map((coin) =>
             <CoinCard
                 key={index}
                 coin_name={coin.name}
@@ -30,15 +30,16 @@ class CryptoContainer extends Component {
 
     render() {
         const { crypto } = this.props;
+        const { contentContainer } = styles;
 
         if (crypto.isFetching) {
             return (
                 <View>
-                    <Spinner 
-                    visible={crypto.isFetching}
-                    textContent={"Loading..."}
-                    textStyle={{color: '#253145'}}
-                    animation="fade"
+                    <Spinner
+                        visible={crypto.isFetching}
+                        textContent={"Loading..."}
+                        textStyle={{ color: '#253145' }}
+                        animation="fade"
                     />
 
                 </View>
@@ -46,10 +47,17 @@ class CryptoContainer extends Component {
         }
 
         return (
-            <View>
-                {this.renderCoinCards}
-            </View>
+            <ScrollView contentContainerStyle={contentContainer}>
+                {this.renderCoinCards()}
+            </ScrollView>
         )
+    }
+}
+
+const styles = {
+    contentContainer: {
+        paddingBottom: 100,
+        paddingTop: 55
     }
 }
 
@@ -59,4 +67,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { FetchCoinData })(CryptoContainer)
+export default connect(mapStateToProps, { FetchCoinData })(CryptoContainer);
