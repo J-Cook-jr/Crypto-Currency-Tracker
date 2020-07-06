@@ -41,8 +41,6 @@ You also need the Expo app as well.
 
 
 ## Building The App
-Show examples of usage:
-`put-your-code-here`
 
 Start by making a `src` directory where you place all your code.
 
