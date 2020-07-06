@@ -1,17 +1,12 @@
-# Project Name
-> Here goes your awesome project description!
+# Crypto Track
+A crypto currency tracker that allows you to view how crypto currencies are performing in their market.
 
 ## Table of contents
-* [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
-
-
-## General info
-A crypto currency tracker that allows you to view how crypto currencies are performing in their market.
 
 ## Screenshots
 ![Example screenshot](./img/iphoneapp.png)
