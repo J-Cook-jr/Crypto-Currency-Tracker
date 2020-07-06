@@ -276,7 +276,7 @@ I needed :
 ![state](./img/state.png)
 
 
-Next, I implementing the `switch()` conditional and imported the action types.
+Next, I implemented the `switch()` conditional and imported the action types.
 
 ![datatypes](./img/datatypes.png)
 
