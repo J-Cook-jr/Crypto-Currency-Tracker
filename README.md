@@ -108,7 +108,7 @@ Create `src/Store.js` and add the following contents.
 
 Above, you see: import `Platform` from `‘react-native’`. Platform is needed for the remote dev tools.
 
-`createStore()` is needed to create the initial store. Pass this store to the `<Provider>`
+`createStore()` is needed to create the initial store. Pass the store to the `<Provider>`.
 
 `applyMiddleware()` — Is for applying the middleware. I used thunk actions, promise and logger.
 
@@ -118,7 +118,7 @@ I passed my middleware and devTools as the arguments for `compose` function.
 
 I imported `RootReducer` and passed it as the first argument to the `createStore()` function.
 
-Last, I connected to  the store to `localhost`.
+Last, I connected the store to `localhost`.
 
 ## Adding the Provider
 
@@ -131,7 +131,7 @@ The `Provider` accepts one argument — which is store. The `Provider` role is t
 
 ## Final Tooling Steps
 
-Finally, I added a some scripts to `package.json`
+Finally, I added some scripts to `package.json`
 
 `“postinstall”: “remotedev-debugger — hostname localhost — port 5678 — injectserver”`
 
@@ -158,7 +158,7 @@ Because reducers are async by default (anonymous functions), all reducers get in
 
 
 I used the connect method to hook React components with Redux state.
-`connect()` accepts two arguments.
+`connect()` accepts two arguments:
 
 The first argument is `mapStateToProps`. This Maps the Redux state to our React props. It allowed me to access the crypto state under this.props.crypto
 
