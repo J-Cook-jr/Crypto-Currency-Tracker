@@ -309,7 +309,7 @@ The data is now mapped under this.props.crypto. Next, I implemented the views.
 
 I Created a stateless component called `CoinCard.js`.
 Next, I declared my props. I named them the same as the data in the API.
-Then I added the coin icons and made a file in `Utils` called `CoinIcons.js` and add these links.
+Then I added the coin icons and made a file in `Utils` called `CoinIcons.js` and added these links.
 
 ![coins](./img/iccons.png)
 
