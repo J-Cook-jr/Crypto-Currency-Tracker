@@ -268,14 +268,15 @@ As raw data, the payload looks like this :
 
 This is the data being passed to the reducer.
 
-In `CryptoReducer.js` I defined the `initialState`
+In `CryptoReducer.js` I defined the `initialState`.
 
 I needed :
-State for data being fetched to show a spinner.
 
-The state that holds the actual data from the request.
+1. State, for the data being fetched to show a spinner.
 
-And error handling.
+2. The state that holds the actual data from the request.
+
+3 .And error handling.
 
 ![state](./img/state.png)
 
