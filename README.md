@@ -185,7 +185,7 @@ Run iOS simulator.
 ![iphone](./img/iphone.png)
 
 
-At the bottom of the screen there was a debugging message in. When working with a simulator,
+At the bottom of the screen there was a debugging message. When working with a simulator,
 the following commands will open options for react native apps:
 
 ##### MAC: cmd + d
