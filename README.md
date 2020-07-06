@@ -276,7 +276,7 @@ I needed :
 
 2. The state that holds the actual data from the request.
 
-3 .And error handling.
+3. And error handling.
 
 ![state](./img/state.png)
 
